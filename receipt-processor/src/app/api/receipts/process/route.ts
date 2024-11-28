@@ -1,6 +1,5 @@
+import { receipts } from '@/utils/receiptStore';
 import { v4 as uuidv4 } from 'uuid';
-
-const receipts = new Map();
 
 export async function POST(req: Request) {
     try {
