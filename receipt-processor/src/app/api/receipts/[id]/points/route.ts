@@ -2,7 +2,7 @@ import { receipts } from "@/utils/receiptStore";
 
 
 export async function GET(req: Request, { params }: { params: { id: string } }) {
-    const { id } = params;
+    const { id } = await params;
 
     if (receipts.has(id)) {
         const points = receipts.get(id);
