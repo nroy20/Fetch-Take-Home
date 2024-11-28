@@ -7,7 +7,14 @@ export async function POST(req: Request) {
         const receipt = await req.json();
 
         const points = calculatePoints(receipt);
-        receipts.set(id, points);
+        const dataSet = receipts.set(id, points);
+
+        if (!dataSet) {
+            return new Response(JSON.stringify({ error: 'Failed to store receipt data' }), {
+                status: 500,
+                headers: { 'Content-Type': 'application/json' },
+            });
+        }
 
         return new Response(JSON.stringify({ id }), {
             status: 200,
