@@ -1,5 +1,5 @@
 class InMemoryStorage {
-    private store: Map<string, any>;
+    private store: Map<string, number>;
 
     constructor() {
         if (globalThis.receipts) {
@@ -14,7 +14,7 @@ class InMemoryStorage {
         return this.store.get(key);
     }
 
-    set(key: string, value: any): boolean {
+    set(key: string, value: number): boolean {
         this.store.set(key, value);
         return this.store.has(key);
     }

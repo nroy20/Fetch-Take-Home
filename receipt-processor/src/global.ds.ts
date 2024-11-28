@@ -1,5 +1,6 @@
 declare global {
-    var receipts: Map<string, any> | undefined;
+    // eslint-disable-next-line no-var
+    var receipts: Map<string, number> | undefined;
   }
   
 export {};

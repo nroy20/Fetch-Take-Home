@@ -12,13 +12,6 @@ type Item = {
     price: string;
 };
 
-type FormData = {
-    retailer: string;
-    purchaseDate: string;
-    purchaseTime: string;
-    total: string;
-    items: Item[];
-};
 
 export default function Home() {
     const [formData, setFormData] = useState({
