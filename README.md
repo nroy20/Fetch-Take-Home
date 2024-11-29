@@ -69,10 +69,6 @@ To stop the Docker container, you can either:
 - **Backend**: The API is handled through server-side routes in Next.js.
 - **Data Storage**: Currently, receipt data is stored in-memory within the application and will be lost when the application restarts.
 
-## Running Tests
-
-To ensure everything works as expected, you can run unit tests or end-to-end tests. This can be done inside the Docker container (if you have a test suite configured). You can add testing instructions once the testing framework is set up.
-
 ## Next Steps To Consider
 
 - Implement form validation and error handling
