@@ -73,6 +73,17 @@ To stop the Docker container, you can either:
 
 To ensure everything works as expected, you can run unit tests or end-to-end tests. This can be done inside the Docker container (if you have a test suite configured). You can add testing instructions once the testing framework is set up.
 
+## Next Steps To Consider
+
+- Implement form validation and error handling
+- Persist data in a database
+- Implement authentication and authorization
+- Add logging and monitoring
+- Optimize performance with lazy loading & code splitting
+- Enhance UI/UX and styling
+- Write unit and integration tests
+- Deploy to a cloud provider 
+
 ## License
 
 This project is licensed under the MIT License.
